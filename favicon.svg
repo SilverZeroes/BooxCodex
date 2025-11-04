@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">BookSite Logo</title>
+  <desc id="desc">Minimal flat open-book logo with a bookmark — suitable for a book site or reading app.</desc>
+
+  <defs>
+    <style>
+      :root{
+        --fill1:#1f2937;    /* main color */
+        --fill2:#ffffff;    /* background/contrast */
+        --accent:#eab308;   /* bookmark/accent */
+      }
+      .bg { fill: var(--fill2); }
+      .book { fill: var(--fill1); }
+      .page { fill: var(--fill2); }
+      .spine { fill: rgba(0,0,0,0.06); }
+      .bookmark { fill: var(--accent); }
+    </style>
+  </defs>
+
+  <!-- circular subtle backdrop -->
+  <circle cx="256" cy="256" r="240" fill="#f7f7f8"/>
+
+  <!-- open book base -->
+  <g transform="translate(0,10)">
+    <!-- left cover -->
+    <path class="book" d="M96 180 L248 140 L248 360 L96 320 Z" />
+    <!-- right cover -->
+    <path class="book" d="M416 180 L264 140 L264 360 L416 320 Z" />
+
+    <!-- left page -->
+    <path class="page" d="M112 192 L248 152 L248 308 L112 328 Z" />
+    <!-- right page -->
+    <path class="page" d="M400 192 L264 152 L264 308 L400 328 Z" />
+
+    <!-- spine / gutter -->
+    <rect class="spine" x="240" y="148" width="32" height="160" rx="4" />
+
+    <!-- subtle page lines -->
+    <g stroke="#e6e6e6" stroke-width="3" stroke-linecap="round" opacity="0.9">
+      <path d="M144 204 L236 176"/>
+      <path d="M144 228 L236 200"/>
+      <path d="M144 252 L236 224"/>
+      <path d="M276 176 L368 204"/>
+      <path d="M276 200 L368 228"/>
+      <path d="M276 224 L368 252"/>
+    </g>
+
+    <!-- bookmark -->
+    <g transform="translate(0,0)">
+      <path class="bookmark" d="M260 96 L300 96 L300 224 L272 208 L260 224 Z" />
+      <!-- bookmark subtle trim -->
+      <path d="M272 208 L300 224" fill="none" stroke="#c79b03" stroke-width="2" opacity="0.8"/>
+    </g>
+
+    <!-- small shadow under book -->
+    <ellipse cx="256" cy="356" rx="130" ry="20" fill="rgba(0,0,0,0.06)"/>
+  </g>
+</svg>

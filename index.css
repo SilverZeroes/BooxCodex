@@ -1,0 +1,36 @@
+/*
+    CSS Requirements:
+    ▪ 2 types of CSS (inline, internal, external)   - Done
+    ▪ Use more than 8 different colors: 
+        [#FFFF00, #000000, #FFFFFF, #FF00FF, #0000FF, Crimson, NavyBlue, SteelBlue, Gray]
+    ▪ Class + ID selector
+    ▪ Pseudo-selector (hover)
+    ▪ Floating                                      - Video on the Homepage Should Float to the Right.
+*/
+
+* {
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: steelblue;
+    color: #ffffff;
+}
+
+footer {
+    position: absolute;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: #ffffff;
+}
+
+#legal {
+    transition-duration: .2s;
+}
+#legal:hover {
+    color: crimson;
+    background-color: gray;
+}
