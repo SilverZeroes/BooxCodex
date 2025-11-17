@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="catalog.css">
+    <script src="script.js"></script>
+    <script src="catalog.js"></script>
+    <link rel="icon" type="favicon" href="favicon.ico">
+    <title>BooxCodex | Catalog</title>
+</head>
+<body>
+    <header>
+        <img src="favicon.svg" alt="logo.svg" height="60" style="vertical-align: middle">
+        <a href="index.html" style="text-decoration: none; color: white">
+            <h1 id="title" style="display: inline; vertical-align: middle;">BooxCodex</h1>
+        </a>
+    </header>
+
+    <button onclick="openNav()" id="menubtn">
+        ≡
+    </button>
+    <nav id="sideNav">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalogue</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <section class="content" id="main" onclick="closeNav()">
+        <h2>Here's the full catalog:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Cover</th><th>Book Title</th><th>Author</th><th>Publication Year</th> <th>Genre</th>
+                </tr>
+            </thead>
+            <tr>
+                <td class="cover" style="cursor: pointer;" onclick="openView(0)" onmouseleave="closeView(0)"><img src="../../assets/book1.jpg" alt="Cover.png" height="168">
+                <div class="caption">
+                    <p>Written by the Russian literary giant Fyodor Dostoevsky, The Brothers Karamazov is a profound exploration of faith, morality, and human psychology. As a philosophical novel, it examines the conflicts that arise within families and society, raising timeless questions about free will, responsibility, and the nature of good and evil. Its impact resonates across literature, philosophy, and theology, cementing Dostoevsky’s reputation as one of the greatest novelists of the 19th century.</p>
+                </div>
+                </td>
+                <td>The Brothers Karamazov</td> <td>Fyodor Dostoevsky</td> <td>1880</td> 
+                <td>
+                    <ul>
+                        <li>Philosophical Novel</li> 
+                        <li>Theological Fiction</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover" style="cursor: pointer;" onclick="openView(1)" onmouseleave="closeView(1)"><img src="../../assets/book2.jpg" alt="Cover.png" height="168">
+                <div class="caption">
+                    <p>Another masterpiece by Dostoevsky, this Russian psychological novel delves into conscience, guilt, and the moral dilemmas faced by individuals in a harsh society. Its intense focus on the inner workings of the human mind influenced the development of modern psychological fiction and continues to inspire writers and thinkers around the world, highlighting Dostoevsky’s unmatched insight into human behavior.</p>
+                </div>
+                </td>
+                <td>Crime and Punishment</td> <td>Fyodor Dostoevsky</td> <td>1866</td> 
+                <td>
+                    <ul>
+                        <li>Philosophical Novel</li> 
+                        <li>Crime</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book3.jpg" alt="Cover.png" height="168"></td>
+                <td>The Stranger</td> <td>Albert Camus</td> <td>1942</td> 
+                <td>
+                    <ul>
+                        <li>Philosophical Novel</li> 
+                        <li>Absurdism</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book4.jpg" alt="Cover.png" height="168"></td>
+                <td>The Trial</td> <td>Franz Kafka</td> <td>1925</td> 
+                <td>
+                    <ul>
+                        <li>Philosophical Novel</li> 
+                        <li>Absurdist Horror</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book5.jpg" alt="Cover.png" height="168"></td>
+                <td>The Road</td> <td>Cormac McCarthy</td> <td>2006</td> 
+                <td>
+                    <ul>
+                        <li>Post-Apocalytic</li> 
+                        <li>Tragedy</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book6.jpg" alt="Cover.png" height="168"></td>
+                <td>The Lord of The Rings</td> <td>J.R.R. Tolkien</td> <td>1955</td> 
+                <td>
+                    <ul>
+                        <li>Fantasy</li> 
+                        <li>Epic</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book7.jpg" alt="Cover.png" height="168"></td>
+                <td>The Hobbit</td> <td>J.R.R. Tolkien</td> <td>1937</td> 
+                <td>
+                    <ul>
+                        <li>Fantasy</li> 
+                        <li>Children's Literature</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book8.jpg" alt="Cover.png" height="168"></td>
+                <td>Meditations</td> <td>Marcus Aureilius</td> <td>--</td> 
+                <td>
+                    <ul>
+                        <li>Philosophy</li> 
+                        <li>Historical</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book9.jpg" alt="Cover.png" height="168"></td>
+                <td>The Book of The New Sun</td> <td>Gene Wolfe</td> <td>1983</td> 
+                <td>
+                    <ul>
+                        <li>Science Fiction</li> 
+                        <li>Dystopian</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book10.jpg" alt="Cover.png" height="168"></td>
+                <td>Les Miserables</td> <td>Victor Hugo</td> <td>1862</td> 
+                <td>
+                    <ul>
+                        <li>Tragedy</li> 
+                        <li>Romance</li>
+                        <li>Historical</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book11.jpg" alt="Cover.png" height="168"></td>
+                <td>1984</td> <td>George Orwell</td> <td>1949</td> 
+                <td>
+                    <ul>
+                        <li>Dystopian</li> 
+                        <li>Political Fiction</li>
+                        <li>Social Science Fiction</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="cover"><img src="../../assets/book12.jpg" alt="Cover.png" height="168"></td>
+                <td>Lord of The Flies</td> <td>William Goldings</td> <td>1954</td> 
+                <td>
+                    <ul>
+                        <li>Allegorical Novel</li> 
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+    <footer id="legal">
+        <h6>
+            G4 Web Development Demo
+        </h6>
+    </footer>
+</body>
+</html>

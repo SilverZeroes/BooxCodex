@@ -1,0 +1,39 @@
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: aliceblue;
+}
+
+.cover {
+    padding: 0;
+}
+
+.caption {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    margin-top: 40px;
+    border: 1px solid brown;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: bisque;
+    left: 240px;
+    width: 25%;
+    /* opacity: 0; */
+    /* transition: .5s; */
+}

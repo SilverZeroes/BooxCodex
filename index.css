@@ -1,15 +1,18 @@
 /*
     CSS Requirements:
     ▪ 2 types of CSS (inline, internal, external)   - Done
-    ▪ Use more than 8 different colors: 
-        [#FFFF00, #000000, #FFFFFF, #FF00FF, #0000FF, Crimson, NavyBlue, SteelBlue, Gray]
-    ▪ Class + ID selector
-    ▪ Pseudo-selector (hover)
+    ▪ Use more than 8 different colors:             - Done
+    ▪ Class + ID selector                           - Done
+    ▪ Pseudo-selector (hover)                       - Done
     ▪ Floating                                      - Video on the Homepage Should Float to the Right.
 */
 
 * {
     margin: 0;
+}
+
+body {
+    background-color: gray;
 }
 
 header {
@@ -18,8 +21,45 @@ header {
     color: #ffffff;
 }
 
-footer {
+nav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 80px;
+    left: -200px;
+    background-color: navy;
+    transition: .5s;
+}
+
+#menubtn {
     position: absolute;
+    margin: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    color: white;
+    background-color: steelblue;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    border: solid 1px ;
+    border-color: steelblue;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: crimson;
+    background-color: black;
+}
+
+footer {
+    position: fixed;
+    z-index: 2;
     padding: 5px;
     bottom: 0;
     width: 100%;
@@ -27,10 +67,24 @@ footer {
     color: #ffffff;
 }
 
-#legal {
+.content {
+    margin: 15px;
+    margin-left: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: .5s;
+}
+
+p {
+    font-size: 20px;
+}
+
+#title {
     transition-duration: .2s;
 }
-#legal:hover {
+
+#title:hover {
     color: crimson;
-    background-color: gray;
 }
