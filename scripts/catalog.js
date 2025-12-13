@@ -1,7 +1,6 @@
 
 
 function openView(index) {
-    console.log(document.getElementsByClassName('caption')[index])
     let book = document.getElementsByClassName("caption")[index];
     book.style.display = "inline";
 }

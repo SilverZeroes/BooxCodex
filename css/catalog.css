@@ -25,15 +25,27 @@ tbody tr:hover {
 
 .caption {
     display: none;
-    position: fixed;
-    z-index: 1;
-    margin-top: 40px;
+    position: absolute;
+    z-index: 2;
     border: 1px solid brown;
     border-radius: 20px;
     padding: 20px;
     background-color: bisque;
-    left: 240px;
+    left: 15%;
     width: 25%;
-    /* opacity: 0; */
-    /* transition: .5s; */
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: gray;
+    list-style: none;
+    padding: 0;
 }
